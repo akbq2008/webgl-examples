@@ -1,3 +1,7 @@
+<!--
+ * @Author: wang_yechao
+ * @Date: 2020-02-04 11:30:55
+ -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,11 +30,10 @@
         alert("Unable to initialize WebGL. Your browser or machine may not support it.");
         return;
       }
-
-      // Set clear color to black, fully opaque
-      gl.clearColor(0.0, 0.0, 0.0, 1.0);
+      gl.clearColor(0.0, 0.0, 0.0, 1.0);// 设置用于清空用的颜色。
       // Clear the color buffer with specified clear color
-      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.clear(gl.COLOR_BUFFER_BIT);// 使用预设值来清空缓冲 gl.COLOR_BUFFER_BIT:颜色缓冲区  https://developer.mozilla.org/zh-CN/docs/Web/API/WebGLRenderingContext/clear
+      
     }
   </script>
 </html>
